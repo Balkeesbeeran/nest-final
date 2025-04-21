@@ -1,0 +1,46 @@
+.product-card {
+  width: 18rem;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: fit;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  // background:whitesmoke;
+}
+
+/* Make all images the same height and nicely cropped */
+.product-image {
+  height: 200px;
+  width: 250px;
+  object-fit: fill;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Body should expand to fill space and align content properly */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Button style improvement */
+.btn-outline-primary {
+  border-radius: 2rem;
+  padding: 0.4rem 1.2rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}

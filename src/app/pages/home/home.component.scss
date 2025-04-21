@@ -1,0 +1,50 @@
+// .container{
+//   display: flex;
+// }
+/* carousel-style.css */
+
+/* Set a fixed height and ensure images scale properly */
+.carousel {
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-inner {
+  max-height: 600px;
+}
+
+.carousel-inner img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Optional: Add some spacing and shadow */
+.carousel-item img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .carousel-inner {
+    max-height: 300px;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+  }
+}

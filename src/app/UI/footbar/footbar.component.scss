@@ -1,0 +1,24 @@
+/* Footer Styles */
+.footer {
+  background: linear-gradient(to right, #ffffff, #f1f5f9);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Footer Text */
+.footer p {
+  color: #6b7280; /* Tailwind's gray-500 */
+  font-weight: 400;
+}
+
+/* Social Media Icons */
+.social-icons a {
+  font-size: 1.4rem;
+  color: #4b5563; /* Cool Gray 700 */
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3b82f6;
+  transform: translateY(-2px);
+}

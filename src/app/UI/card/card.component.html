@@ -1,0 +1,65 @@
+
+
+<div class="product-card card shadow-sm border-0" style="width: 18rem;">
+  <!-- Image wrapped in a routerLink that navigates with product ID -->
+  <a [routerLink]="['/productview', data.id]">
+    <img [src]="data.image" class="card-img-top product-image" [alt]="data.title" />
+  </a>
+
+  <div class="card-body text-center">
+    <h5 class="card-title fw-bold">{{ data.title }}</h5>
+
+    <h3 class="card-title text-success mb-1">
+      ₹{{ data.price }}
+      <span *ngIf="data.discount > 0" class="badge bg-danger ms-2">-{{ data.discount }}%</span>
+    </h3>
+
+    <h6 class="text-muted mb-2">
+      {{ data.brand | titlecase }} {{ data.model }}
+      <span *ngIf="data.color">({{ data.color | titlecase }})</span>
+    </h6>
+
+    <p class="card-text small text-muted">{{ data.description }}</p>
+
+    <!-- View Details button (optional: also routes to same detail page) -->
+    <a [routerLink]="['/productview', data.id]" class="btn btn-outline-primary btn-sm">
+      View Details
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="card" style="width: 18rem;">
+  <a [routerLink]="['/productview', data.id]">
+  <img src={{data.image}} class="card-img-top" alt="product-img"></a>
+  <div class="card-body">
+    <h5 class="card-title">{{data.title}}</h5>
+    <h3 class="card-title">{{data.price}}</h3>
+    <h3 class="card-title">{{data.rate}}</h3>
+    <p class="card-text">{{data.description}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> -->
